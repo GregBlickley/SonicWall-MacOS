@@ -34,7 +34,7 @@ else
     source "$tempDir/installer.sh"
 
     # wait for the script to finish
-    tmp="How do we do this?"
+    sleep 1m
 
     # Remove the install.sh file
     echo "removing temp directory"
