@@ -3,7 +3,8 @@
 #Variables
 appName="SonicWall Mobile Connect.app"
 tempDir="$HOME/Downloads/SonicWall-Temp"
-$gitInst="https://raw.githubusercontent.com/GregBlickley/SonicWall-MacOS/main/app_installer.sh"
+gitInst="https://raw.githubusercontent.com/GregBlickley/SonicWall-MacOS/main/app_installer.sh"
+
 # check to see if the application exists
 if ls /Application | grep -qi "$appName"; then
 
