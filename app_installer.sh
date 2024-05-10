@@ -9,7 +9,7 @@ $dmgName="Sonicwall_VD"
 
 # download .dmg
 echo "downloading application file"
-curl "$gitInst" -o "$tempDir/$dmgFile"
+curl -o "$tempDir/$dmgFile" "$gitInst"
 
 # confirm download of .dmg
 if [ $? != 0 ]; then
