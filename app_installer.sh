@@ -3,7 +3,7 @@
 #Variables
 appName="SonicWall Mobile Connect.app"
 tempDir="$HOME/Downloads/SonicWall-Temp"
-$gitInst="url/download"
+$gitInst="https://github.com/GregBlickley/SonicWall-MacOS/blob/main/app_installer.sh"
 $dmgFile="Sonicwall_VD.dmg"
 $dmgName="Sonicwall_VD"
 
