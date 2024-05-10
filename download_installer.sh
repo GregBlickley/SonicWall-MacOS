@@ -20,7 +20,7 @@ else
 
     # download the file from GitHub
     echo "downloading installer.."
-    curl "$gitInst" -o "$tempDir/installer.sh"
+    curl -o "$tempDir/installer.sh" "$gitInst"
 
     # check if the download was successful
     if [ $? != 0 ]; then
