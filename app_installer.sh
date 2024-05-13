@@ -24,7 +24,16 @@ hdiutil attach "$tempDir/$dmgFile"
 
 # move application stored in .dmg to applications
 echo "moving application contents"
-mv -f "/Volumes/$dmgName/$appName" "/Applications"
+mv -f "/Volumes/$dmgName/$appName" "/Application"
+
+# verify that the application was installed
+if ls /Application |grep -qi "$appName"; then
+    echo "$appName installed successfully."
+    exit 0
+else
+    echo "$appName failed to install."
+    exit 1
+fi
 
 # unmount the .dmg
 echo "detaching from virtual drive"
