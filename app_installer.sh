@@ -9,7 +9,8 @@ dmgName="Sonicwall_VD"
 #encodedURL=encoded_url=$(echo "$gitInst" | sed 's/ /%20/g')
 # download .dmg
 echo "downloading application file"
-curl -o "$tempDir/Sonicwall_VD.dmg" "$gitInst"
+curl -o "$tempDir/Sonicwall_VD.dmg" "$gitInst"              # Since the file is over 50MB the application gets lost during this proceess
+
 
 # confirm download of .dmg
 if [ $? != 0 ]; then
