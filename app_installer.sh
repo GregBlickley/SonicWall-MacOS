@@ -25,7 +25,7 @@ hdiutil attach "$tempDir/$dmgFile"
 # move application stored in .dmg to applications
 echo "moving application contents"
 #mv -f "/Volumes/$dmgName/$appName" "/System/Applications"
-cp -R "/Volumes/$dmgName/$appName" "/Application"
+cp -R "/Volumes/$dmgName/$appName" "/Applications"
 
 # verify that the application was installed
 if ls /System/Applications | grep -qi "$appName"; then
