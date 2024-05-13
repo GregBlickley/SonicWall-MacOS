@@ -3,13 +3,13 @@
 #Variables
 appName="SonicWall Mobile Connect.app"
 tempDir="$HOME/Downloads/SonicWall-Temp"
-gitInst="https://github.com/GregBlickley/SonicWall-MacOS/raw/main/Sonicwall_VD.dmg"
+gitInst="https://raw.githubusercontent.com/GregBlickley/SonicWall-MacOS/main/Sonicwall_VD.dmg"
 dmgFile="Sonicwall_VD.dmg"
 dmgName="Sonicwall_VD"
 #encodedURL=encoded_url=$(echo "$gitInst" | sed 's/ /%20/g')
 # download .dmg
 echo "downloading application file"
-curl -o "$tempDir/$dmgFile" "$gitInst"
+curl -o "$tempDir/Sonicwall_VD.dmg" "$gitInst"
 
 # confirm download of .dmg
 if [ $? != 0 ]; then
