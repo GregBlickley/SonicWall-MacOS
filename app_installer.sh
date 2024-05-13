@@ -27,7 +27,7 @@ echo "moving application contents"
 mv -f "/Volumes/$dmgName/$appName" "/Applications"
 
 # verify that the application was installed
-if ls /Application |grep -qi "$appName"; then
+if ls /Applications |grep -qi "$appName"; then
     echo "$appName installed successfully."
     exit 0
 else
