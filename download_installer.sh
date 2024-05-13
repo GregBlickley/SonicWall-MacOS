@@ -31,7 +31,7 @@ else
 
     # Run the install.sh
     echo "running installer."
-    ./installer.sh && wait 
+    source "$tempDir/installer.sh" && wait 
 
     # wait for the script to finish
     #sleep 60
