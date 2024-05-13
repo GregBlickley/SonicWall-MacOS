@@ -31,10 +31,10 @@ else
 
     # Run the install.sh
     echo "running installer."
-    source "$tempDir/installer.sh"
+    ./installer.sh && wait 
 
     # wait for the script to finish
-    sleep 60
+    #sleep 60
 
     # Remove the install.sh file
     echo "removing temp directory"
