@@ -24,7 +24,7 @@ hdiutil attach "$tempDir/$dmgFile"
 
 # move application stored in .dmg to applications
 echo "moving application contents"
-mv "/Volumes/$dmgName/$appName" "/Applications"
+mv -f "/Volumes/$dmgName/$appName" "/Applications"
 
 # unmount the .dmg
 echo "detaching from virtual drive"
