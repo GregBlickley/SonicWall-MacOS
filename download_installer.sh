@@ -6,7 +6,7 @@ tempDir="$HOME/Downloads/SonicWall-Temp"
 gitInst="https://raw.githubusercontent.com/GregBlickley/SonicWall-MacOS/main/app_installer.sh"
 
 # check to see if the application exists
-if ls /Application | grep -qi "$appName"; then
+if ls /Applications | grep -qi "$appName"; then
 
     # if it exists exit 0
     exit 0
@@ -41,7 +41,7 @@ else
     rm -r "$tempDir"
 
     # verify that the application was installed
-    if ls /Application | grep -qi "$appName"; then
+    if ls /Applications | grep -qi "$appName"; then
         echo "application has been installed."
         exit 0
     else
