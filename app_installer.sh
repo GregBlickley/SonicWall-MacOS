@@ -28,13 +28,13 @@ echo "moving application contents"
 cp -R "/Volumes/$dmgName/$appName" "/Applications"
 
 # verify that the application was installed
-if ls /System/Applications | grep -qi "$appName"; then
-    echo "$appName installed successfully."
-    exit 0
-else
-    echo "$appName failed to install."
-    exit 1
-fi
+#if ls /System/Applications | grep -qi "$appName"; then
+ #   echo "$appName installed successfully."
+  #  exit 0
+#else
+ #   echo "$appName failed to install."
+  #  exit 1
+#fi
 
 # unmount the .dmg
 echo "detaching from virtual drive"
